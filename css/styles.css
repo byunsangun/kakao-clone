@@ -3,10 +3,12 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friends.css";
 
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: white;
   padding: 10px 20px;
@@ -17,4 +19,5 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
