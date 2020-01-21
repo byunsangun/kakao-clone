@@ -4,18 +4,30 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #fce006;
+  background-image: linear-gradient(#aa4b6b, #6b6b83, #3b8d99);
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
   color: white;
-  font-size: 28px;
+  font-size: 35px;
   text-align: center;
   line-height: 1.5;
   padding: 0px 20px;
   display: none;
   z-index: 4;
+  animation: big 1s linear forwards infinite;
+}
+@keyframes big {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 @media screen and (min-width: 550px) {

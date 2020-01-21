@@ -11,3 +11,35 @@
   opacity: 0.6;
   margin-bottom: 12px;
 }
+
+.friends__friend {
+  margin-top: 20px;
+}
+.m-avatar {
+  animation: big-little 1s linear forwards infinite;
+}
+
+@keyframes big-little {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.g-avatar {
+  animation: rotation 1s linear forwards infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}

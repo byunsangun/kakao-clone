@@ -177,17 +177,22 @@
   display: block;
   font-weight: 600;
   font-size: 12px;
+  animation: float 2s linear forwards infinite;
 }
 
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0px;
   color: white;
   background-image: linear-gradient(to right, #7b4397, #dc2430);
+  line-height: 1.5;
+  animation: float 2s linear forwards infinite;
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px;
   background-image: linear-gradient(to left, #00c6ff, #0072ff);
+  line-height: 1.5;
+  animation: float 2s linear forwards infinite;
 }
 
 @keyframes incomingAnim {
@@ -218,4 +223,20 @@
 
 .sent-message {
   animation: sentAnimation 0.5s ease-out forwards;
+}
+
+.chats__chat {
+  margin-bottom: 30px;
+}
+
+@keyframes float {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: none;
+  }
 }
